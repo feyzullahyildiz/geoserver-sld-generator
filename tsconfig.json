@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ES2019",
-    "module": "ESNext",
+    "module": "commonjs",
+    "target": "es2018",
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "Node",
     "forceConsistentCasingInFileNames": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "lib": ["es2018"]
   }
 }
