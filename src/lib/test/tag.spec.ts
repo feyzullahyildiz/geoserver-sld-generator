@@ -30,6 +30,7 @@ describe('tag', () => {
         const b = new Tag('b', { selfClosing: true });
         b.appendAttribute('foo', 'bar');
         b.setInnerText('TRUE');
+        b.setInnerText('TRUE');
         a.appendTag(b);
         expect(a.getText()).toBe('<a>\n <b foo="bar" >TRUE</b>\n</a>');
         a.ifHasInnerTextMakeItInSingleLine = false;

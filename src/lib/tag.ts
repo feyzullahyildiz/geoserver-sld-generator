@@ -46,6 +46,7 @@ export class Tag {
         this.childrenTags.push(tag);
     }
     setInnerText(str: string) {
+        this.removeInnerText();
         this.childrenTags.push(str);
     }
     removeTag(tag: Tag) {
@@ -111,7 +112,7 @@ export class Tag {
         }
         const body = this.childrenTags.map(tagOrText => {
             if (tagOrText instanceof Tag) {
-                return tagOrText._getText(beautified, lineEnd, leftWhiteSpaceSize + 1, this.leftWhiteSpaceChar, _ifHasInnerTextMakeItInSingleLine);
+                return tagOrText._getText(beautified, lineEnd, leftWhiteSpaceSize + 1, _leftWhiteSpaceChar, _ifHasInnerTextMakeItInSingleLine);
             }
             return nextPrefixString + tagOrText;
         });
