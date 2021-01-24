@@ -1,4 +1,4 @@
-export { Tag } from './lib/tag';
-export { RootSld } from './lib/root-sld';
-export { EasyTagCreator } from './lib/easy-tag-creator';
+export { Tag } from './tag';
+export { RootSld } from './root-sld';
+export { EasyTagCreator } from './easy-tag-creator';
 

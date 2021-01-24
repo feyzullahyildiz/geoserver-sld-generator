@@ -1,6 +1,6 @@
 {
   "name": "geoserver-sld-generator",
-  "version": "0.0.2-alpha",
+  "version": "0.0.3-alpha",
   "description": "",
   "main": "dist/geoserver-sld-generator.js",
   "umd:main": "dist/geoserver-sld-generator.umd.js",
