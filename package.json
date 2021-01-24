@@ -1,11 +1,18 @@
 {
   "name": "geoserver-sld-generator",
-  "version": "0.0.3-alpha",
+  "version": "0.0.4-alpha",
   "description": "",
   "main": "dist/geoserver-sld-generator.js",
   "umd:main": "dist/geoserver-sld-generator.umd.js",
   "module": "dist/geoserver-sld-generator.mjs",
+  "scripts": {
+    "build": "microbundle -o dist/ --sourcemap false --compress false",
+    "dev": "microbundle watch -o dist/ --sourcemap false --compress false",
+    "test": "jest --coverage",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
+  },
   "files": [
+    "index.d.ts",
     "dist",
     "readme.md"
   ],
@@ -27,12 +34,6 @@
     "prettier": "^2.0.4",
     "ts-jest": "^26.3.0",
     "typescript": "^4.0.3"
-  },
-  "scripts": {
-    "build": "microbundle -o dist/ --sourcemap false --compress false",
-    "dev": "microbundle watch -o dist/ --sourcemap false --compress false",
-    "test": "jest --coverage",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
   },
   "repository": {
     "type": "git",
