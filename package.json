@@ -1,6 +1,6 @@
 {
   "name": "geoserver-sld-generator",
-  "version": "1.0.0",
+  "version": "0.0.1-alpha",
   "description": "",
   "main": "dist/geoserver-sld-generator.js",
   "umd:main": "dist/geoserver-sld-generator.umd.js",
@@ -38,7 +38,10 @@
     "type": "git",
     "url": "git+https://github.com/feyzullahyildiz/geoserver-sld-generator"
   },
-  "keywords": ["sld", "geoserver"],
+  "keywords": [
+    "sld",
+    "geoserver"
+  ],
   "jest": {
     "testEnvironment": "node",
     "testPathIgnorePatterns": [
